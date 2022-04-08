@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbpHome = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cbxPort = new System.Windows.Forms.ComboBox();
             this.btnCheck = new System.Windows.Forms.Button();
             this.tbpShow = new System.Windows.Forms.TabPage();
             this.pnlShow = new System.Windows.Forms.Panel();
@@ -39,8 +41,7 @@
             this.pnlShowItems = new System.Windows.Forms.FlowLayoutPanel();
             this.tbpSettings = new System.Windows.Forms.TabPage();
             this.tmrShow = new System.Windows.Forms.Timer(this.components);
-            this.cbxPort = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tbpHome.SuspendLayout();
             this.tbpShow.SuspendLayout();
@@ -59,6 +60,7 @@
             // 
             // tbpHome
             // 
+            this.tbpHome.Controls.Add(this.button2);
             this.tbpHome.Controls.Add(this.button1);
             this.tbpHome.Controls.Add(this.cbxPort);
             this.tbpHome.Controls.Add(this.btnCheck);
@@ -69,6 +71,24 @@
             this.tbpHome.TabIndex = 0;
             this.tbpHome.Text = "Home";
             this.tbpHome.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(604, 291);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cbxPort
+            // 
+            this.cbxPort.FormattingEnabled = true;
+            this.cbxPort.Location = new System.Drawing.Point(38, 126);
+            this.cbxPort.Name = "cbxPort";
+            this.cbxPort.Size = new System.Drawing.Size(121, 21);
+            this.cbxPort.TabIndex = 1;
             // 
             // btnCheck
             // 
@@ -142,23 +162,15 @@
             // 
             this.tmrShow.Tick += new System.EventHandler(this.tmrShow_Tick);
             // 
-            // cbxPort
+            // button2
             // 
-            this.cbxPort.FormattingEnabled = true;
-            this.cbxPort.Location = new System.Drawing.Point(38, 126);
-            this.cbxPort.Name = "cbxPort";
-            this.cbxPort.Size = new System.Drawing.Size(121, 21);
-            this.cbxPort.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(604, 291);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button2.Location = new System.Drawing.Point(588, 88);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
@@ -189,6 +201,7 @@
         private System.Windows.Forms.Timer tmrShow;
         private System.Windows.Forms.ComboBox cbxPort;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

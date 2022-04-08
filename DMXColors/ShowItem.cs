@@ -23,6 +23,7 @@ namespace DMXColors
             lblID.Text = ID.ToString();
             ThisColor = Color.FromArgb(random.Next(0, 255), random.Next(0, 255), random.Next(0, 255));
             pnlItemColor.BackColor = ThisColor;
+            
         }
 
         private void btnPickColor_Click(object sender, EventArgs e)
@@ -36,21 +37,6 @@ namespace DMXColors
 
         public void tmr_Tick(object sender, EventArgs e)
         {
-            
-
-
-
-            //if (TimeElapsed >= nudDjan.Value)
-            //{
-            //    tmr.Stop();
-            //    TimeElapsed = 0;
-            //}
-            //else
-            //{
-            //    Form1.Instance.pnlShow.BackColor = ThisColor; 
-            //    TimeElapsed = TimeElapsed + 1;
-
-            //}
 
         }
 

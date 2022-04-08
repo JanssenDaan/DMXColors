@@ -30,8 +30,7 @@ namespace DMXColors
         public Form1()
         {
             InitializeComponent();
-            Instance = this;
-
+            Instance = this; 
         }
 
         private void btnCheck_Click(object sender, EventArgs e)
@@ -40,6 +39,7 @@ namespace DMXColors
             {
                 cbxPort.Items.Add(dmx.PortNameAt(i));
             }
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -64,7 +64,7 @@ namespace DMXColors
             WorkList();
         }
 
-        private async void WorkList()
+        private void WorkList()
         {
             ItemTotal = UCS.Count;
             TimePassed = 0;
@@ -126,12 +126,18 @@ namespace DMXColors
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dmx.DmxToDefault(dmx.PortNameAt(0));
-            Color c = Color.Aqua;
-            dmx.DmxLoadBuffer(1, (byte)c.R, 512);
-            dmx.DmxLoadBuffer(2, (byte)c.G, 512);
-            dmx.DmxLoadBuffer(3, (byte)c.B, 512);
-            dmx.DmxSendCommand(512);
+            //dmx.DmxToDefault(dmx.PortNameAt(0));
+            //Color c = Color.Aqua;
+            //dmx.DmxLoadBuffer(1, (byte)c.R, 512);
+            //dmx.DmxLoadBuffer(2, (byte)c.G, 512);
+            //dmx.DmxLoadBuffer(3, (byte)c.B, 512);
+            //dmx.DmxSendCommand(512);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            string x = h.ToXML(UCS);
         }
     }
 }
