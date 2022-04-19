@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbpHome = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cbxPort = new System.Windows.Forms.ComboBox();
             this.btnCheck = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@
             this.pnlShowItems = new System.Windows.Forms.FlowLayoutPanel();
             this.tbpSettings = new System.Windows.Forms.TabPage();
             this.tmrShow = new System.Windows.Forms.Timer(this.components);
-            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tbpHome.SuspendLayout();
             this.tbpShow.SuspendLayout();
@@ -71,6 +71,16 @@
             this.tbpHome.TabIndex = 0;
             this.tbpHome.Text = "Home";
             this.tbpHome.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(588, 88);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -160,17 +170,8 @@
             // 
             // tmrShow
             // 
+            this.tmrShow.Interval = 1000;
             this.tmrShow.Tick += new System.EventHandler(this.tmrShow_Tick);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(588, 88);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
